@@ -1,6 +1,6 @@
 <template>
-  <section class="caracteristicas">
-    <div class="destaque">
+  <section class="strip">
+    <div class="emphasis">
       <h3>Investir é sobre você</h3>
       <p>A INVESTIR EM POUCOS MINUTOS. DESCOMPLIQUE.</p>
     </div>
@@ -13,7 +13,7 @@ export default {};
 </script>
 
 <style scoped>
-.caracteristicas {
+.strip {
   color: white;
   background-color: darkgrey;
   display: flex;
@@ -22,18 +22,18 @@ export default {};
   padding: 100px 50px;
 }
 
-.caracteristicas h3 {
+.strip h3 {
   font-size: 2rem;
   text-align: left;
 }
 
-.caracteristicas p {
+.strip p {
   max-width: 800px;
   color: white;
   text-align: left;
 }
 
-.caracteristicas .btn_2 {
+.strip .btn_2 {
   background-color: black;
   color: white;
   padding: 10px 30px;

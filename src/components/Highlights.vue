@@ -1,32 +1,32 @@
 <template>
-  <main class="conteudo">
-    <section class="conteudo-principal">
-      <div class="conteudo-principal-caixa-cinza"></div>
-      <div class="conteudo-principal-escrito">
-        <h1 class="conteudo-principal-titulo">Lorem ipsum</h1>
-        <h2 class="conteudo-principal-subtitulo">
+  <main class="highlights">
+    <section class="highlights-manin">
+      <div class="highlights-manin-box-grey"></div>
+      <div class="highlights-manin-written">
+        <h1 class="highlights-manin-title">Lorem ipsum</h1>
+        <h2 class="highlights-manin-subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna blandit
           urna sit in dictum aliquam. Tempus, viverra tincidunt risus eget
           aliquam ipsum.<br />Lorem ipsum dolor sit amet, consectetur adipiscing
           elit. Urna blandit urna sit in dictum aliquam. Tempus, viverra
           tincidunt risus eget aliquam ipsum.
         </h2>
-        <button class="conteudo-principal-botao">Button</button>
+        <button class="highlights-manin-botton">Button</button>
       </div>
     </section>
-    <section class="conteudo-secundario">
-      <div class="conteudo-secundario-escrito">
-        <h1 class="conteudo-secundario-titulo">Lorem ipsum</h1>
-        <h2 class="conteudo-secundario-subtitulo">
+    <section class="highlights-secondary">
+      <div class="highlights-secondary-written">
+        <h1 class="highlights-secondary-title">Lorem ipsum</h1>
+        <h2 class="highlights-secondary-subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna blandit
           urna sit in dictum aliquam. Tempus, viverra tincidunt risus eget
           aliquam ipsum.<br />Lorem ipsum dolor sit amet, consectetur adipiscing
           elit. Urna blandit urna sit in dictum aliquam. Tempus, viverra
           tincidunt risus eget aliquam ipsum.
         </h2>
-        <button class="conteudo-secundario-botao">Button</button>
+        <button class="highlights-secondary-botton">Button</button>
       </div>
-      <div class="conteudo-secundario-caixa-cinza"></div>
+      <div class="highlights-secondary-box-grey"></div>
     </section>
   </main>
 </template>
@@ -36,39 +36,39 @@ export default {};
 </script>
 
 <style scoped>
-.conteudo {
+.highlights {
   margin-bottom: 5px;
 }
 
-.conteudo-principal {
+.highlights-manin {
   padding: 40px 50px;
   display: flex;
   justify-content: space-around;
 }
 
-.conteudo-principal-caixa-cinza {
+.highlights-manin-box-grey {
   width: 300px;
   height: 500px;
   background-color: #d4d4d4;
 }
 
-.conteudo-principal-escrito {
+.highlights-manin-written {
   display: flex;
   flex-direction: column;
   gap: 32px;
   max-width: 500px;
 }
 
-.conteudo-principal-titulo {
+.highlights-manin-title {
   font-size: 2rem;
   color: black;
 }
 
-.conteudo-principal-subtitulo {
+.highlights-manin-subtitle {
   color: black;
 }
 
-.conteudo-principal-botao {
+.highlights-manin-botton {
   color: white;
   padding: 24px 32px;
   background: #e02b57;
@@ -80,35 +80,35 @@ export default {};
   max-width: 130px;
 }
 
-.conteudo-secundario {
+.highlights-secondary {
   padding: 40px 50px;
   display: flex;
   justify-content: space-around;
 }
 
-.conteudo-secundario-caixa-cinza {
+.highlights-secondary-box-grey {
   width: 300px;
   height: 500px;
   background-color: #d4d4d4;
 }
 
-.conteudo-secundario-escrito {
+.highlights-secondary-written {
   display: flex;
   flex-direction: column;
   gap: 32px;
   max-width: 500px;
 }
 
-.conteudo-secundario-titulo {
+.highlights-secondary-title {
   font-size: 2rem;
   color: black;
 }
 
-.conteudo-secundario-subtitulo {
+.highlights-secondary-subtitle {
   color: black;
 }
 
-.conteudo-secundario-botao {
+.highlights-secondary-botton {
   color: white;
   padding: 24px 32px;
   background: #e02b57;
