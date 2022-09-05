@@ -81,4 +81,9 @@ export default {};
   border-radius: 100px;
   gap: 8px;
 }
+
+.navbar-button:hover{
+  background-color: grey;
+  cursor: pointer;
+}
 </style>

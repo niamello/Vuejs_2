@@ -1,8 +1,8 @@
 <template>
-  <div class="Banner">
+  <div class="banner">
     <h1>Lorem ipsum dolor sit, consectetur adipiscing elit.</h1>
     <h3>Consequat leo, nec, sit sociis tellus ut amet</h3>
-    <button class="Banner-button">Button</button>
+    <button class="banner-button">Button</button>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {};
 </script>
 
 <style scoped>
-.Banner {
+.banner {
   background-size: cover;
   min-height: 75vh;
   color: white;
@@ -22,21 +22,21 @@ export default {};
   align-items: flex-start;
 }
 
-.Banner h1 {
+.banner h1 {
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 90px;
   display: flex;
 }
 
-.Banner h3 {
+.banner h3 {
   font-size: 2rem;
   margin-bottom: 30px;
   font-weight: normal;
   font-size: 20px;
 }
 
-.Banner-button {
+.banner-button {
   flex-direction: row;
   align-items: center;
   padding: 24px 32px;
@@ -45,12 +45,17 @@ export default {};
   border-radius: 100px;
 }
 
+.banner-button:hover{
+  background-color: grey;
+  cursor: pointer;
+}
+
 @media (max-width: 700px) {
-  .Banner h1 {
+  .banner h1 {
     font-size: 2.5rem;
   }
 
-  .Banner h3 {
+  .banner h3 {
     font-size: 1.5rem;
   }
 }

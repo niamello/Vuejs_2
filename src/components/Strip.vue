@@ -4,7 +4,7 @@
       <h3>Investir é sobre você</h3>
       <p>A INVESTIR EM POUCOS MINUTOS. DESCOMPLIQUE.</p>
     </div>
-    <button class="btn_2">Button</button>
+    <button class="btn-2">Button</button>
   </section>
 </template>
 
@@ -33,7 +33,7 @@ export default {};
   text-align: left;
 }
 
-.strip .btn_2 {
+.strip .btn-2 {
   background-color: black;
   color: white;
   padding: 10px 30px;
@@ -41,5 +41,10 @@ export default {};
   cursor: pointer;
   border-radius: 20px;
   text-align: center;
+}
+
+.btn-2:hover{
+  background-color: grey;
+  cursor: pointer;
 }
 </style>
