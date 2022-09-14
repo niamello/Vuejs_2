@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomeView from './components/HomeView.vue'
+import HomeView from './views/HomeView.vue'
+import Register from './views/Register'
+import RegisterStep1 from './components/RegisterStep/RegisterStep1'
+import RegisterStep2 from './components/RegisterStep/RegisterStep2'
+import RegisterStep3 from './components/RegisterStep/RegisterStep3'
 
 Vue.use(Router)
 
@@ -12,10 +16,31 @@ export default new Router({
       path: '/',
       name: 'home',
       component: HomeView
-    }
+    },
+    {
+      path: '/register',
+      component: Register,
+      name: 'register',
+      children: [{
+        path: 'step1',
+        name: 'step1',
+        component: RegisterStep1,
+      },
+      {
+        path: 'step2',
+        name: 'step2',
+        component: RegisterStep2,
+      },
+      {
+        path: 'step3',
+        name: 'step3',
+        component: RegisterStep3,
+      },
+      ],
+    },
   ]
-  }
-  )
+}
+)
 
 // import Vue from 'vue'
 // import VueRouter from 'vue-router'

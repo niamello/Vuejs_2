@@ -9,3 +9,6 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+import VueTheMask from 'vue-the-mask';
+Vue.use(VueTheMask);

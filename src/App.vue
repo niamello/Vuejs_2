@@ -20,7 +20,6 @@ export default {
     font-size: 100%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    color: white;
 }
 
 ul {

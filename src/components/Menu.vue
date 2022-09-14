@@ -27,7 +27,7 @@
         <a href="">Menu3</a>
         <a href="">Menu4</a>
         <a href="">Menu5</a>
-        <button class="navbar-button">Button</button>
+        <router-link to="/register/step1" class="navbar-button">Button</router-link>
       </div>
     </div>
   </header>
