@@ -1,20 +1,21 @@
 <template>
   <html>
     <body>
-      <div>
-        <header>
-          <nav class="navigation-bar">
-            <img
-              class="navbar-image"
-              src="@/img/arrow.png"
-              @click="goBack"
-              alt="Tecla de voltar"
-            />
-            <h4 class="navbar-title">Formulário</h4>
-          </nav>
-        </header>
-        <form id="app" @submit.prevent="checkForm">
+      <header>
+        <nav class="navigation-bar">
+          <img
+            class="navbar-image"
+            src="@/img/arrow.png"
+            @click="goBack"
+            alt="Tecla de voltar"
+          />
+          <h4 class="navbar-title">Formulário</h4>
+        </nav>
+      </header>
+      <div class="main">
+        <form class="form" id="app" @submit.prevent="checkForm">
           <div class="container">
+            <label for="file"></label>
             <div class="container-title">
               <h1 class="title">Seja bem-vindo</h1>
               <h3 class="subtitle">Dados de contato</h3>
@@ -41,8 +42,7 @@
                 <input id="e-mail" v-model="email" type="email" name="email" />
                 <p v-if="errorEmail" class="textError">E-mail inválido</p>
               </div>
-
-              <div class="input-box">
+              <div class="input">
                 <label for="confirmeemail">Confirmar e-mail</label>
                 <input id="confirmemail" v-model="confirmemail" type="email" />
                 <p v-if="errorConfirmEmail" class="textError">
@@ -68,8 +68,7 @@
                   CPF deve ter 11 carácteres
                 </p>
               </div>
-
-              <div class="input-box">
+              <div class="input">
                 <label for="cellphone">Celular</label>
                 <input
                   v-mask="'+55 (##) #####-####'"
@@ -127,7 +126,9 @@
               magna aliquet risus. Habitant neque, id risus diam.
             </p>
 
-            <router-link to="step2" class="form-button" click="checkForm">Continuar</router-link>
+            <router-link to="step2" class="form-button" click="checkForm"
+              >Continuar</router-link
+            >
           </div>
         </form>
 
@@ -163,8 +164,8 @@ export default {
   },
 
   methods: {
-    goBack(){
-      this.$router.back()
+    goBack() {
+      this.$router.back();
     },
     checkName() {
       if (!this.name) {
@@ -274,11 +275,19 @@ export default {
 </script>
 
 <style scoped>
+.main {
+  display: flex;
+}
+
+.form {
+  margin-top: 40px;
+  width: 65%;
+}
+
 .navigation-bar {
   position: fixed;
   top: 0;
   background-color: rgb(224, 43, 87);
-  color: white;
   width: 100%;
   height: 40px;
   text-align: center;
@@ -287,16 +296,17 @@ export default {
   align-items: center;
   box-shadow: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  color: white;
   text-transform: uppercase;
 }
 
 .container {
-  width: 100%;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   color: black;
-  padding: 30px 0px 30px 450px;
+  padding: 30px;
+  margin: 0 auto;
 }
 
 .navbar-image {
@@ -311,27 +321,21 @@ export default {
 }
 
 .title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 35px;
   font-weight: 800;
 }
 
-.text {
-  font-size: 15px;
-  margin-top: 20px;
-  font-weight: 500;
-}
-
 .name {
-  margin-top: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 476px;
+  margin-top: 20px;
 }
 
 .input-group {
@@ -356,11 +360,13 @@ export default {
 .description-one {
   font-weight: 600;
   margin-top: 30px;
+  font-size: 15px;
 }
 
 .description-two {
   font-weight: 600;
   margin-top: 20px;
+  font-size: 15px;
 }
 
 .checkbox-one {
@@ -380,6 +386,37 @@ export default {
   font-weight: 500;
 }
 
+.input {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 8px);
+}
+
+.input:first-child {
+  margin-right: 16px;
+}
+
+.input-group {
+  display: flex;
+  margin-top: 20px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+label {
+  font-size: 13px;
+}
+
+.text {
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
 .form-button {
   background-color: rgb(224, 43, 87);
   width: 120px;
@@ -394,12 +431,8 @@ export default {
 }
 
 .sideimg {
-  height: 700px;
-  width: 400px;
-  position: fixed;
-  top: 0;
-  left: 0;
   margin-top: 40px;
+  width: 35%;
 }
 
 .sideimg div {

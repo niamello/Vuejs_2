@@ -13,74 +13,74 @@
         </nav>
       </header>
       <div class="main">
-      <form class="form" id="app" @submit.prevent="checkForm">
-        <div class="container">
-          <div class="container-title">
-            <h3 class="subtitle">Dados pessoais</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci,
-              volutpat in iaculis nec nibh sinsl tellus.
-            </p>
-          </div>
+        <form class="form" id="app" @submit.prevent="checkForm">
+          <div class="container">
+            <div class="container-title">
+              <h3 class="subtitle">Dados pessoais</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci,
+                volutpat in iaculis nec nibh sinsl tellus.
+              </p>
+            </div>
 
-          <div class="input-group">
-            <div class="input">
-              <label for="country">País onde reside</label>
-              <input
-                id="country"
-                v-model="country"
-                type="text"
-                name="country"
-              />
-              <p v-if="errorCountryEmpty" class="textError">
-                País não pode ser vazio
-              </p>
+            <div class="input-group">
+              <div class="input">
+                <label for="country">País onde reside</label>
+                <input
+                  id="country"
+                  v-model="country"
+                  type="text"
+                  name="country"
+                />
+                <p v-if="errorCountryEmpty" class="textError">
+                  País não pode ser vazio
+                </p>
+              </div>
+              <div class="input">
+                <label for="city">Cidade</label>
+                <input id="city" v-model="city" type="text" name="city" />
+                <p v-if="errorCityEmpty" class="textError">
+                  Cidade não pode ser vazio
+                </p>
+              </div>
             </div>
-            <div class="input">
-              <label for="city">Cidade</label>
-              <input id="city" v-model="city" type="text" name="city" />
-              <p v-if="errorCityEmpty" class="textError">
-                Cidade não pode ser vazio
-              </p>
-            </div>
-          </div>
 
-          <div class="input-group">
-            <div class="input">
-              <label for="cep">CEP</label>
-              <input id="cep" v-model="cep" type="text" name="cep" />
-              <p v-if="errorCepEmpty" class="textError">
-                CEP não pode ser vazio
-              </p>
+            <div class="input-group">
+              <div class="input">
+                <label for="cep">CEP</label>
+                <input id="cep" v-model="cep" type="text" name="cep" />
+                <p v-if="errorCepEmpty" class="textError">
+                  CEP não pode ser vazio
+                </p>
+              </div>
+              <div class="input">
+                <label for="address">Endereço</label>
+                <input
+                  id="address"
+                  v-model="address"
+                  type="text"
+                  name="address"
+                />
+                <p v-if="errorAddressEmpty" class="textError">
+                  Endereço não pode ser vazio
+                </p>
+              </div>
             </div>
-            <div class="input">
-              <label for="address">Endereço</label>
-              <input
-                id="address"
-                v-model="address"
-                type="text"
-                name="address"
-              />
-              <p v-if="errorAddressEmpty" class="textError">
+
+            <div class="number">
+              <label for="number">Number</label>
+              <input id="number" v-model="number" type="text" name="number" />
+              <p v-if="errorNumberEmpty" class="textError">
                 Endereço não pode ser vazio
               </p>
             </div>
-          </div>
 
-          <div class="number">
-            <label for="number">Number</label>
-            <input id="number" v-model="number" type="text" name="number" />
-            <p v-if="errorNumberEmpty" class="textError">
-              Endereço não pode ser vazio
-            </p>
+            <router-link to="step3" class="form-button" click="checkForm"
+              >Continuar</router-link
+            >
           </div>
-
-          <router-link to="step3" class="form-button" click="checkForm"
-            >Continuar</router-link
-          >
-        </div>
-      </form>
-      <img class="sideimg" src="@/img/felipe.jpg" alt="Imagem lateral" />
+        </form>
+        <img class="sideimg" src="@/img/felipe.jpg" alt="Imagem lateral" />
       </div>
     </body>
   </html>
@@ -171,11 +171,11 @@ export default {
 </script>
 
 <style scoped>
-.main{
+.main {
   display: flex;
 }
 
-.form{
+.form {
   margin-top: 40px;
   width: 65%;
 }
@@ -220,17 +220,17 @@ export default {
   margin-top: 20px;
 }
 
-input{
+input {
   padding: 5px;
   border-radius: 4px;
   border: 1px solid black;
 }
 
-label{
+label {
   font-size: 13px;
 }
 
-.number{
+.number {
   width: 100%;
   display: flex;
   flex-direction: column;
