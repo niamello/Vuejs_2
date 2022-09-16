@@ -174,17 +174,14 @@ export default {
     },
     checkName() {
       if (!this.name) {
-        /*se tiver vazio*/
         this.errorNameEmpty = true;
         this.errorNameLength = false;
         return false;
       } else if (this.name.length < 3) {
-        /*se não tiver o mínimo de 5 carácteres*/
         this.errorNameEmpty = false;
         this.errorNameLength = true;
         return false;
       } else {
-        /*se estiver corrreto*/
         this.errorNameEmpty = false;
         this.errorNameLength = false;
         return true;
@@ -192,9 +189,8 @@ export default {
     },
     checkEmail() {
       const emailRegex =
-        /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i; /*validação de e-mail - deve ter o @, algo a mais depois do @ e o ponto*/
+        /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
       if (!emailRegex.test(this.email)) {
-        /*se não passar no teste*/
         this.errorEmail = true;
         return false;
       } else {
@@ -207,24 +203,20 @@ export default {
         this.errorConfirmEmail = true;
         return false;
       } else {
-        /*caso for igual*/
         this.errorConfirmEmail = false;
         return true;
       }
     },
     checkCpf() {
       if (!this.cpf) {
-        /*se tiver vazio*/
         this.errorCPFLength = false;
         this.errorCPFEmpty = true;
         return false;
       } else if (this.cpf.length < 14) {
-        /*se não tiver 11 carácteres*/
         this.errorCPFEmpty = false;
         this.errorCPFLength = true;
         return false;
       } else {
-        /*se estiver corrreto*/
         this.errorCPFEmpty = false;
         this.errorCPFLength = false;
         return true;
@@ -232,17 +224,14 @@ export default {
     },
     checkCellphone() {
       if (!this.cellphone) {
-        /*se tiver vazio*/
         this.errorCellphoneLength = false;
         this.errorCellphoneEmpty = true;
         return false;
       } else if (this.cellphone.length < 14) {
-        /*se não tiver 11 carácteres*/
         this.errorCellphoneEmpty = false;
         this.errorCellphoneLength = true;
         return false;
       } else {
-        /*se tiver correto */
         this.errorCellphoneEmpty = false;
         this.errorCellphoneLength = false;
         return true;
@@ -252,7 +241,6 @@ export default {
       if (!this.date) {
         this.errorDateLength = true;
         return false;
-        /*se não passar no teste*/
       } else {
         this.errorDateLength = false;
         return true;
