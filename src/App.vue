@@ -30,6 +30,9 @@ a {
     text-decoration: none;
     cursor: pointer;
     opacity: 0.9;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 a:hover {
