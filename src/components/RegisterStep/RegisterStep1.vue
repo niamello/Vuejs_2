@@ -17,6 +17,11 @@
           <div class="container">
             <label for="file"></label>
             <div class="container-title">
+              <img 
+              class="navigation-one"
+              src="@/img/navigation_one.png"
+              alt="Etapa 1 da Navegação"
+              />
               <h1 class="title">Seja bem-vindo</h1>
               <h3 class="subtitle">Dados de contato</h3>
               <p class="text">
@@ -313,6 +318,12 @@ export default {
   left: 10px;
   position: fixed;
   cursor: pointer;
+}
+
+.navigation-one{
+  width: 480px;
+  margin-bottom: -90px;
+  margin-top: -100px;
 }
 
 .container-title {

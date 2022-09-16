@@ -43,6 +43,7 @@ export default {};
   gap: 8px;
   background: black;
   border-radius: 100px;
+  color: white;
 }
 
 .banner-button:hover{

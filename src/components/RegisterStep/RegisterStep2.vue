@@ -16,6 +16,11 @@
         <form class="form" id="app" @submit.prevent="checkForm">
           <div class="container">
             <div class="container-title">
+              <img
+                class="navigation-two"
+                src="@/img/navigation_two.png"
+                alt="Etapa 2 da Navegação"
+              />
               <h3 class="subtitle">Dados pessoais</h3>
               <p class="text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci,
@@ -228,6 +233,12 @@ input {
 
 label {
   font-size: 13px;
+}
+
+.navigation-two{
+  width: 480px;
+  margin-bottom: -125px;
+  margin-top: -70px;
 }
 
 .number {

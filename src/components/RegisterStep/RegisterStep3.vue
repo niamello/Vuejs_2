@@ -16,6 +16,11 @@
         <form class="form" id="app">
           <div class="container">
             <img
+              class="navigation-three"
+              src="@/img/navigation_three.png"
+              alt="Etapa 3 da Navegação"
+            />
+            <img
               class="container-check"
               src="@/img/check.jpg"
               alt="Cadastro finalizado"
@@ -104,17 +109,23 @@ export default {
   font-weight: bold;
 }
 
+.navigation-three{
+  width: 460px;
+  margin-bottom: -25px;
+  margin-top: -80px;
+}
+
 .navbar-button {
-    background-color: black;
-    width: 130px;
-    border: 0;
-    border-radius: 8px;
-    color: white;
-    margin: 10px auto;
-    font-weight: 800;
-    cursor: pointer;
-    padding: 8px 0px;
-    text-align: center;
+  background-color: black;
+  width: 130px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  margin: 10px auto;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 8px 0px;
+  text-align: center;
 }
 
 .container-text {

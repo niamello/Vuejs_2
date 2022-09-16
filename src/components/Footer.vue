@@ -111,6 +111,7 @@ footer h2 {
 footer a {
     text-decoration: none;
     text-align: center;
+    color: white;
 }
 
 footer li {
