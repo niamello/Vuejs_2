@@ -23,7 +23,7 @@
               alt="Etapa 1 da Navegação"
               />
               <h1 class="title">Seja bem-vindo</h1>
-              <h3 class="subtitle">Dados de contato</h3>
+              <h3 class="subtitle">Dados do contato</h3>
               <p class="text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci,
                 volutpat in iaculis nec nibh sinsl tellus.
